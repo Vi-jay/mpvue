@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "babel-polyfill": "^6.26.0",
+    "minireset.css": "^0.0.3",
     "mpvue": "^1.0.0",
     "mpvue-router-patch": "^0.2.1",
     "path": "^0.12.7",
