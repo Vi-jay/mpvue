@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>index2</h1>
+    <h1>indexasd</h1>
     <router-link to="/pages/counter">counter</router-link>
     <button @click="goCounter">button</button>
   </div>
@@ -12,7 +12,7 @@
     methods: {
       goCounter () {
         console.log(this.$route)
-        this.$router.push('/pages/counter')
+        this.$router.push({ path: '/pages/counter', query: { name: 'vijay' } })
       }
     }
   }

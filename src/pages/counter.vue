@@ -1,12 +1,15 @@
 <template>
-    <div>
-      <h1>counter</h1>
-    </div>
+  <div>
+    <h1>counter</h1>
+  </div>
 </template>
 
 <script>
   export default {
-    name: 'counter'
+    name: 'counter',
+    onShow () {
+      console.log(this.$route.query)
+    }
   }
 </script>
 
