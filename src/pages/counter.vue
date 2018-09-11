@@ -1,43 +1,15 @@
 <template>
-  <div class="counter-warp">
-    <p>Vuex counter：{{ count }}</p>
-    <p>
-      <button @click="increment">+</button>
-      <button @click="decrement">-</button>
-    </p>
-
-    <a href="/pages/index" class="home">去往首页</a>
-  </div>
+    <div>
+      <h1>counter</h1>
+    </div>
 </template>
 
 <script>
-import { mapState, mapMutations } from 'vuex'
-
-export default {
-  computed: {
-    ...mapState([
-      'count'
-    ])
-  },
-  methods: {
-    ...mapMutations([
-      'increment',
-      'decrement'
-    ])
+  export default {
+    name: 'counter'
   }
-}
 </script>
 
-<style>
-.counter-warp {
-  text-align: center;
-  margin-top: 100px;
-}
-.home {
-  display: inline-block;
-  margin: 100px auto;
-  padding: 5px 10px;
-  color: blue;
-  border: 1px solid blue;
-}
+<style scoped>
+
 </style>
