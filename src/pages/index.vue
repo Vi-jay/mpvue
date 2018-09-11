@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>indexasd</h1>
+    <h1>index2</h1>
     <router-link to="/pages/counter">counter</router-link>
     <button @click="goCounter">button</button>
   </div>
