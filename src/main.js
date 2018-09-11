@@ -1,18 +1,18 @@
 import Vue from 'vue'
 import App from '@/App'
 import store from '@/store'
-import router from './router'
-// import MpvueRouterPatch from 'mpvue-router-patch'
+// import router from './router'
+import MpvueRouterPatch from 'mpvue-router-patch'
 
-// Vue.use(MpvueRouterPatch)
+Vue.use(MpvueRouterPatch)
 Vue.config.productionTip = false
 // App.store = store
-// App.mpType = 'app'
+App.mpType = 'app'
 
 const app = new Vue({
   el: '#app',
   store,
-  router,
+  // router,
   ...App
 })
 app.$mount()

@@ -12,7 +12,7 @@
     methods: {
       goCounter () {
         console.log(this.$route)
-        this.$router.push('/pages/counter')
+        this.$router.push({ path: '/pages/counter', query: { name: 'vijay' } })
       }
     }
   }
